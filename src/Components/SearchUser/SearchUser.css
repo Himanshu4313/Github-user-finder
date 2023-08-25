@@ -1,0 +1,21 @@
+.search-user-container{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+
+#SearchUser{
+    padding: 10px 12px;
+    width: 40vw;
+    margin-right: 8px;
+    border-radius: 5px;
+}
+
+#getbtn{
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: rgb(13, 13, 86);
+    color: #ffffff;
+    font-size: 17px;
+    border-radius: 5px;
+}
