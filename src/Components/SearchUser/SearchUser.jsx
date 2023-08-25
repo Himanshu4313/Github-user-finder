@@ -1,15 +1,17 @@
-import { useState } from "react";
+import UseDebounce from "../../hooks/useDebounce";
 import "./SearchUser.css";
-function SearchUser({UpdateSearchTerm}) {
-     const [searchTerm , setSearchTerm] = useState('');
+function SearchUser({ UpdateSearchTerm }) {
+  const setUseDebounce = UseDebounce((e) => UpdateSearchTerm(e.target.value));
   return (
     <>
       <div className="search-user-container">
-        <input type="text" id="SearchUser" placeholder="Search github user.."
-         onChange={(e) => setSearchTerm(e.target.value)}
+        <input
+          type="search"
+          id="SearchUser"
+          placeholder="Search github user.."
+          onChange={setUseDebounce}
         />
-        <button id="getbtn" onClick={ () => UpdateSearchTerm(searchTerm)} >Get Data</button>
-       
+        {/* <button id="getbtn">Get Data</button> */}
       </div>
     </>
   );
