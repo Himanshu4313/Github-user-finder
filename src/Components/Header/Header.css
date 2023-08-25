@@ -1,12 +1,24 @@
 .Header {
-  width: 40vw;
+  width: 20vw;
   margin: 20px auto;
   padding: 10px 15px;
   letter-spacing: 2px;
+  border: 3px solid #ffffff;
+  border-radius: 8px;
 }
 h2 {
   text-align: center;
-  text-decoration: underline;
   font-size: 1.7rem;
-  font-weight: 500;
+  font-weight: 600;
+  color: #ffffff;
+}
+@media only screen  and (max-width: 600px ){
+  .Header {
+    width: 70vw;
+    margin: 20px auto;
+    padding: 10px 15px;
+    letter-spacing: 2px;
+    border: 3px solid #ffffff;
+    border-radius: 8px;
+  }
 }

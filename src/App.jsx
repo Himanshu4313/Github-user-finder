@@ -9,8 +9,11 @@ function App() {
   return (
     <>
       <Header />
+      <div className="github-container">
       <SearchUser  UpdateSearchTerm={setsearchTerm}/>
-      {(!searchTerm) ? <GithubDetails/> : <GithubDetails key={searchTerm} GithubUserName= {searchTerm}/>} 
+           {(!searchTerm) ? <GithubDetails/> : <GithubDetails key={searchTerm} GithubUserName= {searchTerm}/>} 
+      </div>
+     
     </>
   );
 }

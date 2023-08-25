@@ -5,10 +5,14 @@
 }
 
 #SearchUser{
-    padding: 10px 12px;
-    width: 40vw;
-    margin-right: 8px;
-    border-radius: 5px;
+    padding: 15px 40px;
+    width: 65vw;
+    margin-right: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+
 }
 
 #getbtn{
@@ -18,4 +22,10 @@
     color: #ffffff;
     font-size: 17px;
     border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px){
+    #SearchUser{
+        width: 85vw;
+    }  
 }

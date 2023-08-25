@@ -1,3 +1,11 @@
+.Details-container{
+    border: 2px solid blue;
+    width: 65vw;
+    background-color: #06068d;
+    margin: 0px auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 .avatarImage{
     display: flex;
     justify-content: center;
@@ -5,23 +13,49 @@
     margin:34px auto;
 }
 .avatarImage img{
-    width: 250px;
-    border-radius: 4px;
+    width: 240px;
+    border-radius: 50%;
 }
 .textBox{
     display: inline-block;
     padding:10px 30px;
     font-size: 18px;
     font-weight: 500;
-    border: 1px solid blue;
+    border-radius: 8px;
     margin: 5px;
+    color: #ffffff;
+    background-color: #0d0d52;
+    letter-spacing: 1px;
 }
 .userDetails-wrapper{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 70vw;
-    margin: auto;
-    flex-direction: column;
+    width: 43vw;
+    margin: 8px auto;
+    
+}
+.Firstinfo {
+    display: flex;
+    justify-self:center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Secondinfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width:600px){
+    .Details-container{
+        width: 85vw;
+    }
+    .textBox{
+        width: 70vw;
+        padding:10px 20px;
+        letter-spacing: 2px;
+    }
 }
