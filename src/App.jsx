@@ -5,15 +5,14 @@ import SearchUser from "./Components/SearchUser/SearchUser";
 import GithubDetails from "./Components/githubDetails/githubDetails";
 
 function App() {
-  const [searchTerm , setsearchTerm] = useState('');
+  const [searchTerm, setsearchTerm] = useState("");
   return (
     <>
       <Header />
       <div className="github-container">
-      <SearchUser  UpdateSearchTerm={setsearchTerm}/>
-           {(!searchTerm) ? <GithubDetails/> : <GithubDetails key={searchTerm} GithubUserName= {searchTerm}/>} 
+        <SearchUser UpdateSearchTerm={setsearchTerm} />
+         <GithubDetails key={searchTerm}  GithubUserName={searchTerm}/>
       </div>
-     
     </>
   );
 }
