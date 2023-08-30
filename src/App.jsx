@@ -11,7 +11,7 @@ function App() {
       <Header />
       <div className="github-container">
         <SearchUser UpdateSearchTerm={setsearchTerm} />
-         <GithubDetails key={searchTerm}  GithubUserName={searchTerm}/>
+         <GithubDetails  key={searchTerm}  GithubUserName={searchTerm}/>
       </div>
     </>
   );
